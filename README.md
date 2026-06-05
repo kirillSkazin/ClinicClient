@@ -7,7 +7,7 @@
 Рекомендуемый способ - Docker из проекта `Server`:
 
 ```powershell
-cd Server
+cd ClinicServer
 copy .env.example .env
 docker compose up --build
 ```
@@ -15,7 +15,7 @@ docker compose up --build
 Если запускаете сервер без Docker:
 
 ```powershell
-cd Server
+cd ClinicServer
 mvn clean package
 java -jar target/clinic-server.jar
 ```
@@ -27,14 +27,14 @@ java -jar target/clinic-server.jar
 Или из терминала:
 
 ```powershell
-cd Client
+cd ClinicClient
 mvn javafx:run
 ```
 
 ### 3. Сборка fat-jar
 
 ```powershell
-cd Client
+cd ClinicClient
 mvn clean package
 java -jar target/clinic-client.jar
 ```
